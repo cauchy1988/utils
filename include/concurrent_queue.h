@@ -1,3 +1,6 @@
+#ifndef TC_UTILS_CONCURRENT_QUEUE_H
+#define TC_UTILS_CONCURRENT_QUEUE_H
+
 #include <queue>
 #include <condition_variable>
 #include <mutex>
@@ -71,3 +74,4 @@ namespace tc_utils {
     }
 }
 
+#endif
