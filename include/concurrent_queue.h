@@ -42,6 +42,8 @@ namespace tc_utils {
 
         _queue.push(value);
         _cond.notify_one();
+
+        return true;
     }
 
     template<typename T>
@@ -58,6 +60,8 @@ namespace tc_utils {
         _queue.pop();
 
         _cond.notify_one();
+
+        return true;
     }
 
     template<typename T>
